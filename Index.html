@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka">
+    <title>Profile</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        /*For HTML content*/
+        #main{
+            width:100%;
+            min-height:100vh;
+            background-color: black;
+            color:#c0c0c0;
+            padding: 10px;
+        }
+        #mainBoxOne{
+            width: 250px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: center;
+            overflow: hidden;
+        }
+        #mainBoxTwo{
+            width: 250px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+        #mainBoxThird{
+            width:80%;
+            min-height: 80%;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+        #redunder{
+            width: 250px;
+            position: relative;
+            min-height: 5px;
+            border-radius: 25px;
+            background-color: red;
+        }
+        #im1{
+           width: 200px;
+          border-radius: 100%;
+            display: inline;
+        }
+        #t2{
+            display: block;
+            position: relative;
+            left: 20%;
+       
+        }
+        #inb1{
+            width: 250px;
+            height: 55px;
+            color: black;
+            padding: 10px;
+            background-color:#f2f2f2;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+        #inb2{
+            width: 250px;
+            height: 55px;
+            color: black;
+            padding: 10px;
+            background-color:#f2f2f2;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+        #inb3{
+            width: 550px;
+            height: 55px;
+            color: black;
+            padding: 10px;
+            background-color:#f2f2f2;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+        #im2,#im5{
+            width: 100px;
+        }
+        #inb4{
+            display: inline-block;
+            width: 150px;
+            background-color:#f2f2f2;
+            padding: 5px;
+        }
+        #inb5{
+            display: inline-block;
+            width: 150px;
+            background-color:#f2f2f2;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        #btn{
+            text-align: center;
+            width: 250px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: red;
+            color: #f2f2f2;
+            margin-top: 10px;
+        }
+        /*Responsive*/
+        @media screen and (max-width:768px) {
+            #t2{
+            display: block;
+            position: relative;
+            left: 40%;
+       
+        }
+        }
+        
+        @media screen and (max-width:427px) {
+            #t2{
+            display: block;
+            position: relative;
+            left: 60%;
+       
+        }
+        #mainBoxOne{
+            width: 150px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: center;
+         
+        }
+        #mainBoxTwo{
+            width: 150px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+        #redunder{
+            width:150px;
+        }
+        #mainBoxThird{
+            width:100%;
+            min-height: 80%;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+        #inb3{
+            width: 300px;
+            height: 55px;
+            color: black;
+            padding: 10px;
+            background-color:#f2f2f2;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+        @media screen and (max-width:425px) {
+            #t2{
+            display: block;
+            position: relative;
+            left: 60%;
+       
+        }
+        #mainBoxOne{
+            width: 150px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            text-align: center;
+         
+        }
+        #mainBoxTwo{
+            width: 150px;
+            height: 50px;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+        #redunder{
+            width:150px;
+        }
+        #mainBoxThird{
+            width:100%;
+            min-height: 80%;
+            color: black;
+            padding: 10px;
+            background-color:#c0c0c0;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+        }
+        #inb3{
+            width: 300px;
+            height: 55px;
+            color: black;
+            padding: 10px;
+            background-color:#f2f2f2;
+            font-family: 'Fredoka';
+            border-radius: 25px;
+            margin-top: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="mainBoxOne">
+           <p id="t1">PROFILE</p> 
+        </div>
+       
+        <div id="mainBoxTwo">
+           <p id="t1"> ASSIGNED ORDERS</p>
+        </div>
+        <div id="redunder">
+
+        </div>
+        <div id="mainBoxThird">
+           <img src="Images/istockphoto-1022174554-612x612.jpg" alt="" id="im1">
+           <p id="t2" style=" margin-top: -80px;">S.Frenando</p>
+          <i> <p id="t2">Joined JUNE 2023</p></i>
+          <p id="t2">&#9956; 5.0</p><br>
+          <div id="inb1">
+            &#9745; <br> Successful Deleveries
+          </div>
+          <div id="inb2">
+            &#9746; <br> Unsuccessful Deleveries
+          </div> <br><br><br>
+          Goals >>> <br>
+          <div id="inb3">
+            &#9822; Target Earnning : Rs.10,000.00
+          </div><br><br><br>
+          Branch Delivery Drivers >>><br>
+          <div id="inb4">
+            <img src="Images/istockphoto-1045886560-170667a.jpg" alt="" id="im2"> <br>
+            DD-211
+          </div>
+          <div id="inb5">
+            <img src="Images/istockphoto-1200677760-612x612.jpg" alt="" id="im5"> <br>
+            DD-220
+          </div>
+        </div>
+        <button id="btn">LOG OUT</button>
+    </div>
+</body>
+</html>
